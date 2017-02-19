@@ -19,3 +19,5 @@ class FindWords(object):
                             break
         return outPut
         
+    def findWordsSolution(self, words):
+        return filter(re.compile('(?i)([qwertyuiop]*|[asdfghjkl]*|[zxcvbnm]*)$').match, words)
